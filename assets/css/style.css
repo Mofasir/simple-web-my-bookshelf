@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #eaffd2;
+}
+
+.headbar {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    background-color: #60b400;
+    color: #ffffff;
+}
+
+.headbar img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+main {
+    width: 80%;
+    margin-top: 15px;
+    margin-inline: auto;
+    color: #1a3100;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sub-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.book-shelf {
+    width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(164, 179, 164, 0.365);
+    height: fit-content;
+    border: 3px #1a3100 solid;
+}
+
+.book-add,
+.book-search {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(164, 179, 164, 0.365);
+    border: 3px #1a3100 solid;
+}
+
+form label {
+    font-weight: 500;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input input,
+.search input {
+    padding: 8px;
+    border: 2px #1a3100 solid;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.search input {
+    width: 80%;
+}
+
+form button {
+    width: 100%;
+    border: 1px #eaffd2 solid;
+    border-radius: 10px;
+    background-color: #60b400;
+    color: #eaffd2;
+    padding: 8px;
+    margin-top: 8px;
+    align-content: center;
+    font-weight: bold;
+    font-size: medium;
+    transition: background-color 0.3s;
+}
+
+.search button {
+    width: 19%;
+}
+
+form button:hover {
+    background-color: #447e02;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.item {
+    border-radius: 10px;
+    margin-top: 16px;
+    padding: 15px;
+    background: #60b400;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.item p, .item h3 {
+    text-align: left;
+}
+
+.item-action {
+    display: flex;
+}
+
+.complete-button,
+.undo-button,
+.edit-button {
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #24964a;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.complete-button:hover,
+.undo-button:hover,
+.edit-button:hover {
+    background-color: #35dc6d;
+    color: #ffffff;
+}
+
+.delete-button {
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #dc3545;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.info {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.365);
+    animation: fadeOut 4s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sub-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .book-shelf {
+        width: 100%;
+    }
+}

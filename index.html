@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/image/book.png">
+    <title>My Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="headbar">
+            <img src="assets/image/book.png" alt="logo book">
+            <h1>My Bookshelf Apps</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="container-form">
+                <div class="book-add">
+                    <form id="book-input">
+                        <h2>Masukkan Buku Baru</h2>
+                        <div class="input">
+                            <label for="bookTitleInput">Judul</label>
+                            <input type="text" name="bookTitleInput" id="bookTitleInput" placeholder="Masukkan Judul Buku" required>
+                        </div>
+                        <div class="input">
+                            <label for="bookAuthorInput">Penulis</label>
+                            <input type="text" name="bookAuthorInput" id="bookAuthorInput" placeholder="Masukkan Penulis Buku" required>
+                        </div>
+                        <div class="input">
+                            <label for="bookYearInput">Tahun Publikasi</label>
+                            <input type="number" name="bookYearInput" id="bookYearInput" placeholder="Masukkan Tahun Publikasi Buku" required>
+                        </div>
+                        <div class="input-inline">
+                            <label for="bookIsCompleteInput">Selesai dibaca</label>
+                            <input type="checkbox" id="bookIsCompleteInput">
+                        </div>
+                          <button class="submit-button" id="bookSubmit" type="submit">Simpan</button>
+                    </form>
+                </div>
+            </section>
+            <section class="container-search">
+                <div class="book-search">
+                    <form id="searchForm" class="search">
+                        <h2>Cari Buku</h2>
+                        <div>
+                            <input type="text" id="keyword" placeholder="Masukkan Judul Buku">
+                            <button type="submit" id="bookSearch">Cari</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="sub-container">
+                <div class="book-shelf">
+                    <h2>Belum selesai dibaca</h2>
+                    <div id="incompleteBookList">
+
+                    </div>
+                </div>
+                <div class="book-shelf">
+                    <h2>Selesai dibaca</h2>
+                    <div id="completeBookList">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
